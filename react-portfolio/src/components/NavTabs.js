@@ -7,13 +7,13 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home" onClick={() => handlePageChange('Home')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}><h1>Ygor</h1></Navbar.Brand>
+        <Navbar.Brand href="#" onClick={() => handlePageChange('Home')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}><h1>Ygor</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#about" onClick={() => handlePageChange('About')}
+          <Nav.Link href="#about" onClick={() => handlePageChange('Home')}
             // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} ><h3>About</h3></Nav.Link>
+            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} ><h3>About</h3></Nav.Link>
           <Nav.Link href="#blog" href="#blog"
             onClick={() => handlePageChange('Blog')}
             // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -21,6 +21,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           <Nav.Link href="#contact" onClick={() => handlePageChange('Contact')}
             // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} ><h3>Contact</h3></Nav.Link>          
+          <Nav.Link href="#resume" onClick={() => handlePageChange('Resume')}
+            // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} ><h3>Resume</h3></Nav.Link>          
         </Nav>
       </Navbar.Collapse>
       </Container>

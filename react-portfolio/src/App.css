@@ -6,6 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
+.footer {
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 2rem 0;
+  width: 20%;
+}
+.footer_title {
+  font-size: 2rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
