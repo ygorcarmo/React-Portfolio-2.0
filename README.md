@@ -15,7 +15,7 @@ This is my portfolio which contains my details, projects and [resume](https://dr
 
 ### Website URL
 
-https://ygorcarmo.github.io/MyPortfolio/
+https://ygorcarmo.github.io/React-Portfolio-2.0/
 
 ### License & copyright
 Licensed under the [MIT License](LICENSE).
